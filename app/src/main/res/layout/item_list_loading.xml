@@ -10,19 +10,19 @@
         android:id="@+id/album_cover"
         android:layout_width="0dp"
         android:layout_height="0dp"
+        android:background="@drawable/album_background_placeholder"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintDimensionRatio="H,1:1"
-        android:scaleType="centerCrop"
-        android:background="@drawable/album_background_placeholder"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/album_title"
+        style="@style/Theme.MyAlbums.ListTitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Theme.MyAlbums.ListTitle"
         android:layout_marginStart="@dimen/margin_start_album"
         android:layout_marginEnd="@dimen/margin_end_album"
         android:background="@color/shimmer_light"
@@ -32,9 +32,9 @@
 
     <TextView
         android:id="@+id/album_artist"
+        style="@style/Theme.MyAlbums.ListSubtitle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/Theme.MyAlbums.ListSubtitle"
         android:layout_marginStart="@dimen/margin_start_album"
         android:layout_marginEnd="@dimen/margin_end_album"
         android:layout_marginBottom="@dimen/margin_bottom_album"

@@ -2,7 +2,6 @@ package com.icerrate.vama.myalbums.data.model
 
 import android.os.Parcelable
 import androidx.room.*
-import com.icerrate.vama.myalbums.data.model.converter.GenresListConverter
 import kotlinx.android.parcel.Parcelize
 
 @Parcelize

@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-
     <integer name="albums_columns">2</integer>
     <integer name="album_cover_small_resolution">400</integer>
     <integer name="album_cover_high_resolution">800</integer>
-
 </resources>
