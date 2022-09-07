@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="light_background">#FFFFFFFF</color>
+    <color name="night_background">#0F0F11</color>
+    <color name="black">#FF000000</color>
+    <color name="title_text">#111226</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="gray_1">#b5b5b5</color>
+    <color name="gray_2">#8e8e93</color>
+    <color name="translucent">#00FFFFFF</color>
+    <color name="shimmer_light">#9E8C8C8C</color>
+    <color name="shimmer_dark">#9E4E4E4E</color>
+
+    <color name="icons_tint_night">#FFFFFF</color>
+    <color name="icons_tint_light">#454545</color>
+    <color name="bright_blue">#007aff</color>
+    <color name="white_50">#80ffffff</color>
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    tools:context=".ui.list.AlbumsListFragment">
+
+    <ImageView
+        android:id="@+id/album_cover"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/back"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginStart="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/fit_screen_margin_vertical"
+        android:background="@drawable/circle_button_background"
+        android:src="@drawable/ic_back"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/artist_name"
+        style="@style/Theme.MyAlbums.DetailSubtitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:layout_marginTop="@dimen/margin_vertical"
+        app:layout_constraintTop_toBottomOf="@id/album_cover"
+        tools:text="Artist Name" />
+
+    <TextView
+        android:id="@+id/album_title"
+        style="@style/Theme.MyAlbums.DetailTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        app:layout_constraintTop_toBottomOf="@id/artist_name"
+        tools:text="Title" />
+
+    <LinearLayout
+        android:id="@+id/genres_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/album_title" />
+
+    <TextView
+        android:id="@+id/release_date"
+        style="@style/Theme.MyAlbums.SecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toTopOf="@id/copyright"
+        tools:text="Release date" />
+
+    <TextView
+        android:id="@+id/copyright"
+        style="@style/Theme.MyAlbums.SecondaryText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toTopOf="@id/visit_album"
+        tools:text="Copyright" />
+
+    <Button
+        android:id="@+id/visit_album"
+        style="@style/Theme.MyAlbums.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/detail_bottom_margin"
+        android:text="@string/visit_the_album"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

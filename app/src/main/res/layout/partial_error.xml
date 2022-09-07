@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_gravity="center"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/error_icon"
+        style="@style/Theme.MyAlbums.Icon"
+        android:layout_width="@dimen/error_icon_size"
+        android:layout_height="@dimen/error_icon_size"
+        android:src="@drawable/ic_signal_error"
+        app:layout_constraintBottom_toTopOf="@id/error_title"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="@dimen/margin_vertical"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/error_title"
+        style="@style/Theme.MyAlbums.ErrorTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/error_description"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/error_icon"
+        tools:text="Title" />
+
+    <TextView
+        android:id="@+id/error_description"
+        style="@style/Theme.MyAlbums.ErrorDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_bottom_album"
+        android:layout_marginTop="@dimen/padding_button_vertical"
+        app:layout_constraintBottom_toTopOf="@id/error_action"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/error_title"
+        tools:text="Description" />
+
+    <Button
+        android:id="@+id/error_action"
+        style="@style/Theme.MyAlbums.ActionButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/error_action_margin"
+        tools:text="Action"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginBottom="@dimen/margin_vertical"
+        app:layout_constraintTop_toBottomOf="@id/error_description" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
