@@ -52,12 +52,12 @@ For functions and constants that could be called multiple times from several pro
 
 ### Light Mode:
 
-![](screenshots/light_list.png) __
+![](screenshots/light_list.png) _ 
 ![](screenshots/light_detail.png)
 
 ### Dark Mode:
 
-![](screenshots/dark_list.png) __
+![](screenshots/dark_list.png) _ 
 ![](screenshots/dark_detail.png)
 
 ## Videos
