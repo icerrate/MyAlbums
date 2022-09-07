@@ -1,3 +1,5 @@
+![](screenshots/logo.png)
+
 # MyAlbums App
 
 This is a sample project for review subjects like MVVM and Repository pattern with Kotlin.
@@ -25,19 +27,58 @@ For Activities, fragments, view models, and use cases
 ### Utils
 For functions and constants that could be called multiple times from several project sections
 
+## Features
+- Request albums from network
+- Show albums on Grid
+- Shimmer animation for loading
+- Image transformation (For rounded corners)
+- Retry logic
+- Basic transition between fragments
+- Detail screen
+- Image caching (Load high res when available)
+- DB storing
+- Dark & Light mode
+- Fullscreen
+
 ## Future improvements
 - Compose
-- Animations between fragments
+- Animations between fragment's elements
 - Pagination for listing albums
-- Blur effect in list screen title
+- Blur effect on list screen title
 - Split into several DI modules
 - Support more exceptions (Error's handling)
 
-## Screenshots & Videos
+## Screenshots
 
-List:
+### Light Mode:
 
-https://user-images.githubusercontent.com/6877923/123006036-64e2e780-d3b7-11eb-922e-018994b32da5.mov
+![](screenshots/light_list.png) __
+![](screenshots/light_detail.png)
+
+### Dark Mode:
+
+![](screenshots/dark_list.png) __
+![](screenshots/dark_detail.png)
+
+## Videos
+
+- List:
+
+![](screenshots/scroll_mini.gif)
+
+https://github.com/icerrate/MyAlbums/blob/master/screenshots/scroll_mini.mov
+
+- Detail:
+
+![](screenshots/detail_mini.gif)
+
+https://github.com/icerrate/MyAlbums/blob/master/screenshots/detail_mini.mov
+
+- Retry Feature:
+
+![](screenshots/retry_mini.gif)
+
+https://github.com/icerrate/MyAlbums/blob/master/screenshots/retry_mini.mov
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
